@@ -1,0 +1,351 @@
+/*.block-anime ul li a:hover{
+.block-body ul li a:hover{
+  color:white;
+  transition: 0.5s ease all;
+  
+}*/
+*{
+	margin: 0 ;
+	padding: 0 ;
+	font-family: Tahoma, Roboto, sans-serif;
+}
+
+/* body */
+body{
+	margin:20px;
+	background-image: url("../img/hoa-thuy-tien-vang13.png");
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+/* header */
+.header{
+		width: 100%;
+		margin-top: 5px;
+		font-family: arial;
+		display:inline-block;
+	}
+		.logo{
+			text-align:center;
+			
+		}
+		.logo img{
+			background-color: rgba(255,255,255,0.6);
+			border-radius: 12px;
+		}
+		.search-form{
+			text-align:right;
+		}
+	
+	
+/*  search form */
+	.search-form{
+		margin-bottom:10px;
+	}
+	.search-form input{
+		padding: 10px 5px;
+	}
+	.search-form input[type=text]{
+		min-width:250px;
+		border-radius:5px;
+	}
+	.search-form input[type=button]{
+		border-radius:5px;
+	}
+	
+/* body */
+.body{
+	font-family: Tahoma,Roboto,Arial,sans-serif; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0;
+	padding-top: 40px;
+	clear: both;
+}
+
+/* menu */
+.menu{
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	.menu ul{}
+		.menu li{
+			display: inline-block;
+			height: 62px;
+		}
+		.menu ul li{
+			display: inline-block;
+			height: 65px;
+		}
+			
+			
+
+
+.menu ul{
+	width:100%;
+	min-height: 70px;
+	background-color:#1E824C;
+	
+}
+
+.menu ul li{
+	float: left;	
+	min-width: 100px;
+	position:relative;
+	
+}
+
+.menu ul li a{
+	color:white;
+	padding: 10px 5px;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+	float: none;
+	display: block;
+}
+
+.menu ul li:hover{
+	transition: 0.5s ease all;
+	background-color: #87D37C;
+	color:white;
+}
+
+/*menu con */
+.menu ul li ul{
+	display:none;
+	width: 100%;
+	position:absolute;
+	top:100%;	
+}
+.menu ul li:hover ul{
+	display: block;	
+}
+.menu ul li ul li{
+	width: 100%;
+}
+/* san pham */
+
+.block-body{
+	width:100%;
+	clear:both;
+	
+}
+.block-body ul li{ 
+	float:left;
+	list-style-type:none;
+	margin: 5px 10px;
+}                               
+
+.block-body .block-body-item{
+	min-width: 20%;
+	padding: 5px 10px;
+	min-height: 350px;
+	background-color: #C5EFF7;
+	max-width: 200px;
+	margin: 20px 0px;
+}
+
+
+
+/* block body */
+.block-body{
+	overflow: hidden;
+	width: 80%;
+	float: left;
+}
+.block-body-title{
+	text-align: left;
+	width:100%;
+	font-weight:bold;
+	font-weight: Slimp;
+	text-decoration:none;
+}
+.block-body-title a{
+	text-decoration:none;
+}
+.block-body-button-tieu-bieu{
+	padding:20px;
+	background-color: lightblue;
+	text-align:center;
+	color: #333;
+	font-weight:bold;
+	transition: 0.5 ease all;
+}
+
+.block-body-button-tieu-bieu a{
+	text-decoration:none;
+	color:blue;
+	transition: 0.5s ease all;
+}
+
+.block-body-button-tieu-bieu  a:hover{
+	color:white;
+	transition: 0.5s ease all;
+}
+
+/*  body right */
+.body-right{
+	overflow: hidden;
+	display: block;
+	height:auto;
+}
+.body-right-title {
+	font-weight:bold;
+}
+.body-right-title h2{
+	padding:10px;
+}
+.body-right-item{
+	max-width: 200px;
+	min-width: 20%;
+	padding: 10px 5px;
+}
+.block-body-button{
+	font-weight:bold;
+	background-color: #F5D76E;
+	text-align:center;
+	padding:20px;
+	
+}
+.block-body-button  a {
+	text-decoration:none;
+	color:blue;
+	transition: 0.5s ease all;
+}
+.block-body-button a:hover{
+	color:white;
+	transition: 0.5s ease all;
+}
+
+
+
+/*single-page */
+
+#single-page .block-body .block-body-item{
+	min-width: 90%;
+	padding: 5px 10px;
+	min-height: 350px;
+	background-color: #C5EFF7;
+	max-width: 200px;
+	margin: 20px auto;
+	border-radius: 5px;
+	
+}
+
+#single-page .block-body-item img{
+	min-width:250px;
+
+}
+
+#single-page .block-body-title{
+	padding: 20px 10px;
+	text-align: center;
+}
+
+#single-page .block-body-content{
+	padding: 20px;
+	font-size: 15px;
+	line-height: 25px;
+	
+}
+
+#single-page .block-body-content {
+
+}
+
+/*footer*/
+.footer{
+
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+	width: 100%;
+	clear: both;
+	background-color: #C5EFF7;
+	text-align: center;
+}
+#copyright a{
+	text-decoration:none;
+	color:blue;
+}
+
+#copyright a:hover{
+	background-color:red;
+}
+
+
+
+/*admin page */
+.form {
+  width: 80%;
+  padding:40px ;
+  background-color:white;
+  margin:40px auto;
+  display: block;
+  
+}
+
+.form input , .form textarea{
+  width:100%;
+  margin-bottom: 20px;
+  padding:20px 0px;
+  font-size: 16px;
+}
+
+.form input[type=submit]{
+ font-weight: bold;
+  color:white;
+  background-color: #27ae60;
+ cursor:pointer;
+}
+
+
+.alert{
+	padding: 20px;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.alert-success{
+	color : #27ae60;
+
+}
+
+.alert-error{
+	color: #c0392b;
+}
+
+.table{
+  width:80%;
+  background-color:white;
+  padding:20px 10px;
+  text-align: center;
+  margin: 20 auto;
+  
+}
+
+.table tbody tr{
+  border: 6px solid #7f8c8d;
+  margin: 5px 0px;
+  padding:10px;  
+  /*! background: green; */
+}
+
+.avatar{
+  max-width:250px;
+  padding:5px;
+}
+
+.avatar-big{
+max-width: 100%;
+width: auto;
+display: block;
+padding: 20px 0px;
+}
+/*end admin page */
+
+
