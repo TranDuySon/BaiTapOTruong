@@ -45,5 +45,9 @@
 		return false;
 	}
 
+	function vnd_format($money){
+		return number_format( intval($money) );
+	}
+
 
 ?>

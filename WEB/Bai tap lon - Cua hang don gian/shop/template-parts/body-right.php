@@ -31,7 +31,7 @@
 								<?php echo $p['excerpt'];?>
 							</p>
 							<p>
-								</br><a href="#"><?php echo number_format($p['price']) . " VND ". " x " . $p['amount'];?></a>
+								</br><a href="#"><?php echo vnd_format($p['price']) . " VND ". " x " . $p['amount'];?></a>
 							</p>
 							<p class="block-body-button">
 								<a href="index.php?r=cart&action=add&id=<?php echo $p['id'];?>">Mua thêm</a>

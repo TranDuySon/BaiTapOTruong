@@ -51,8 +51,8 @@
  			<td><img class="avatar" src="upload/<?php echo $p['avatar']; ?>" title="<?php echo $p['title'] ?>"/></td>
  			<td><?php echo $p["name"];?></td>
  			<td><?php echo $p["amount"]; ?></td>
- 			<td> <?php  echo number_format($p["price"])." VND"; ?> </td>
- 			<td> <?php  echo number_format( $p["price"] * $p["amount"]); ?> VND </td>
+ 			<td> <?php  echo vnd_format($p["price"])." VND"; ?> </td>
+ 			<td> <?php  echo vnd_format( $p["price"] * $p["amount"]); ?> VND </td>
  			<td><a class=" btn-checkout" href="index.php?r=cart&action=add&id=<?php echo $p['id']; ?>" title="Mua thêm một sản phẩm nữa">+1</a></td>
  			<td><a style="color:red" href="index.php?r=cart&action=delete&id=<?php echo $p['id']; ?>" title="Xóa sản phẩm này" onclick="return confirm('bạn chắc chứ !?')">xóa</a></td>
  			<td></td>
@@ -62,7 +62,7 @@
 
  	<tr class="checkout-footer"> 
  		<td>Thành tiền: </td>
- 		<td><?php echo number_format($total); ?> VND</td>
+ 		<td><?php echo vnd_format($total); ?> VND</td>
 	 	<td style="min-width:300px"><a href="index.php?r=cart&action=complete" class="btn btn-checkout">tiến hành thanh toán ! </a></td>
 	</tr>
  	</tbody>
