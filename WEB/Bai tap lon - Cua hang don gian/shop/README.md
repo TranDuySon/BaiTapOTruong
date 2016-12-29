@@ -15,6 +15,7 @@
     
 ---
 
+
 Cái thứ này dùng để làm bài tập thôi, mang ra chạy web thật khả năng cao là bị DDos  sập ngay !!! 
 
 
@@ -28,15 +29,21 @@ Cái thứ này dùng để làm bài tập thôi, mang ra chạy web thật kh�
 
 - apache 
 
+
+
 ---
 
 ### Cách cài đặt và sử dụng :
 
+
+    
     - import file `db.php` mẫu vào trong `phpmyadmin` or `mysql`
     
     - Sau đó copy folder code này vào bất kì chỗ nào
     
     - mở lên = trình duyệt web là chạy thôi
+    
+    - cấu hình database + user trong file  lib.php (  `inc/lib.php`) 
     
 
 

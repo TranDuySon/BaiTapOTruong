@@ -1,4 +1,12 @@
 <?php 
+	//config 
+	
+	$host = "localhost";
+	$db_username = "root";
+	$db_password = "root"; 
+	$db_name = "tien"; //database name
+
+
 	$conn = mysqli_connect("localhost", "root", "root", "tien");
 
 	if( !$conn ){
