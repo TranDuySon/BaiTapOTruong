@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 29, 2016 at 04:42 AM
+-- Generation Time: Dec 29, 2016 at 09:46 PM
 -- Server version: 5.7.16-0ubuntu0.16.04.1
 -- PHP Version: 5.6.29-1+deb.sury.org~xenial+1
 
@@ -42,7 +42,9 @@ CREATE TABLE `hoa` (
 
 INSERT INTO `hoa` (`id`, `menu`, `avatar`, `name`, `info`, `excerpt`, `price`) VALUES
 (4, 5, 'Temple.jpg', 'Hoa Mì Chính', '!?? Hoa Mì ChínhHoa Mì Chính ', 'sss', '12'),
-(5, 4, '168.jpg', 'Hoa Sò', 'Loài hoa này có thể nấu canh được', 'Loài hoa này có thể nấu canh được', '1 đô la');
+(5, 4, '168.jpg', 'Hoa Sò', 'Loài hoa này có thể nấu canh được', 'Loài hoa này có thể nấu canh được', '1 đô la'),
+(6, 3, 'Mr. Lee.jpg', 'Hoa đèn lồng', 'Hoa đèn lồng', 'Hoa đèn lồngHoa đèn lồng\r\nHoa đèn lồngHoa đèn lồng\r\nHoa đèn lồngHoa đèn lồng', '123'),
+(7, 5, 'Paris la Tour Eiffel.jpg', 'Hoa tháp Effei', 'Đây là bông hoa mọc giống cái tháp ', 'Đây là bông hoa mọc giống cái tháp ', '2345');
 
 -- --------------------------------------------------------
 
@@ -82,7 +84,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `info`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Bờ la bờ lô bờ la là ra bờ ao\r\n'),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Bờ la bờ lô bờ la là ra bờ ao\r\n');
 
 --
 -- Indexes for dumped tables
@@ -115,17 +117,17 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `hoa`
 --
 ALTER TABLE `hoa`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
