@@ -2,15 +2,15 @@
 
 ###Một số tính năng cơ bản : 
     
-    - Xem sửa xoá hàng hóa 
-     
-    - Tính năng đặt hàng 
-    
-    - Thêm người dùng mới 
-    
-    - Đăng nhập / tạo người dùng 
-    
-    - blah blah 
+- Xem sửa xoá hàng hóa 
+
+- Tính năng đặt hàng 
+
+- Thêm người dùng mới 
+
+- Đăng nhập / tạo người dùng 
+
+- blah blah 
     
     
 ---
@@ -37,7 +37,7 @@ Cái thứ này dùng để làm bài tập thôi, mang ra chạy web thật kh�
 
 
     
-    - import file `db.php` mẫu vào trong `phpmyadmin` or `mysql`
+- import file `db.php` mẫu vào trong `phpmyadmin` or `mysql`
     
     - Sau đó copy folder code này vào bất kì chỗ nào
     
@@ -45,7 +45,7 @@ Cái thứ này dùng để làm bài tập thôi, mang ra chạy web thật kh�
     
     - cấu hình database + user trong file  lib.php (  `inc/lib.php`) 
     
-
+    - username : admin | password: admin
 
 ---
 
@@ -63,3 +63,4 @@ Cái thứ này dùng để làm bài tập thôi, mang ra chạy web thật kh�
 
 
 - Code: Tớ
+ 

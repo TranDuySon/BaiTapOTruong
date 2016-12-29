@@ -82,8 +82,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `info`) VALUES
-(1, 'duongcuongx', '0ec6e061798a1a86d9afdbdb2475529d', 'Bờ la bờ lô bờ la là ra bờ ao\r\n'),
-(3, 'cuongvv', '4a8a08f09d37b73795649038408b5f33', 'ád');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Bờ la bờ lô bờ la là ra bờ ao\r\n'),
 
 --
 -- Indexes for dumped tables
