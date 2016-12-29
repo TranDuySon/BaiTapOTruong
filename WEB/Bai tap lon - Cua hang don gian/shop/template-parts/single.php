@@ -35,7 +35,7 @@
 
 										
 									<p class="block-body-button-tieu-bieu">
-										<a  class="btn" href="index.php?r=cart&action=add&id=<?php echo $p['title']; ?>">Mua ngay</a>
+										<a  class="btn" href="index.php?r=cart&action=add&id=<?php echo $p['id']; ?>">Mua ngay</a>
 									</p>
 							</div>
 				</div><!-- end .block-body-list -->

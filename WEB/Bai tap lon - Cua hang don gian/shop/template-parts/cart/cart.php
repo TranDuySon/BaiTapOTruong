@@ -22,6 +22,7 @@
 
 			if( empty($product) ){
 				echo alert("Sản phẩm bạn tìm không tồn tại :'( ");
+				return;
 			}
 
 			$isExists = false;
