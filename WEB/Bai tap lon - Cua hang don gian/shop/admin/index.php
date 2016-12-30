@@ -58,13 +58,13 @@
 
 
 						case "login":
-						include 'template-parts/login.php';
+						include 'login.php';
 						break;
 
 						case "logout":
 							if(!empty($_SESSION))
 							session_destroy();
-						include "template-parts/login.php";
+						include "login.php";
 						break;
 
 
