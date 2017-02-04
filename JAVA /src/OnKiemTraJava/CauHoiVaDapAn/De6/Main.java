@@ -17,22 +17,12 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package OnKiemTraJava.CauHoiVaDapAn.De6;
 
 /**
  * 
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
-    
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
-    }
+public class Main {
+
 }

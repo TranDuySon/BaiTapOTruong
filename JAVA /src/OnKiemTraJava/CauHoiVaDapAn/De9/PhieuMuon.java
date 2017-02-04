@@ -17,22 +17,36 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
+package OnKiemTraJava.CauHoiVaDapAn.De9;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
  * 
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
+public class PhieuMuon {
+    public String soPhieuMuon ; 
+    public String ngayMuon ; 
+    public String hanTra; 
+    public String soHieuSach ; 
+    public SinhVien sv = new SinhVien(); 
     
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
+    public void nhap(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Nhập số phiếu mượn : ");
+        soPhieuMuon = scan.nextLine();
+        System.out.println("Nhập ngày mượn : ");
+        ngayMuon = scan.nextLine();
+        System.out.println("Nhập số hiệu sách : ");
+        soHieuSach = scan.nextLine();
+        sv.nhap();
+    }
+    
+    public void xuat(){
+        System.out.println("Mã phiếu : " + soPhieuMuon);
+        System.out.println("ngày mượn : " + ngayMuon + " | hạn trả : " + hanTra + " | số hiệu sách: " + soHieuSach  );
+        System.out.println("Thông tin sinh viên mượn phiếu : ");
+        sv.xuat();
     }
 }

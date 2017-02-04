@@ -17,22 +17,26 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
+package OnKiemTraJava.CauHoiVaDapAn.De7;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
  * 
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
-    
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
-    }
+public class CongNhan  extends CanBo{
+   public String bac;
+   
+   public void nhap(){
+       Scanner scan = new Scanner(System.in);
+       super.nhap();
+       System.out.println("Nhập bậc: ");
+       bac = scan.nextLine();
+   }
+   
+   public void xuat(){
+       super.xuat();
+       System.out.println("công nhân bậc: " + bac);
+   }
 }

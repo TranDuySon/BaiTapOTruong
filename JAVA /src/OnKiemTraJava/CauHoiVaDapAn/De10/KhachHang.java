@@ -17,22 +17,32 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
+package OnKiemTraJava.CauHoiVaDapAn.De10;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
- * 
+ *
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
-    
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
+public class KhachHang {
+
+    public String hoTen;
+    public String soNha;
+    public String maCongTo;
+
+    public void nhap() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Nhập họ tên : ");
+        hoTen = scan.nextLine();
+        System.out.println("Nhập số nhà : ");
+        soNha = scan.nextLine();
+        System.out.println("Nhập mã công tơ: ");
+        maCongTo = scan.nextLine();
     }
+    
+    public void xuat(){
+        System.out.println("Số nhà : " + soNha + " | chủ hộ : " + hoTen  + " | mã công tơ  : " + maCongTo);
+    }
+    
 }

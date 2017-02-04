@@ -17,22 +17,31 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
+package OnKiemTraJava.CauHoiVaDapAn.De8;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
- * 
+ *
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
+public class NhanVienSanXuat extends NhanVien {
+
+    public int sanPham;
+    public float luong;
+
+    @Override
+    public void nhap() {
+        Scanner scan = new Scanner(System.in);
+        super.nhap();
+        System.out.print("nhập số sản phẩm : ");
+        sanPham = scan.nextInt();
+        luong = sanPham * 100000 + phuCap;
+    }
     
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
+    @Override 
+    public void xuat(){
+        System.out.println("Nhân viên sản xuất");
+        super.xuat();
     }
 }

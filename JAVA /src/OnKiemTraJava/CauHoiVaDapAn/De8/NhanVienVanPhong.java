@@ -17,22 +17,31 @@
  * MA 02110-1301  USA
  */
 // Đại khái là dùng thoải mái đuê :3 , cái này t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package Thread;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package OnKiemTraJava.CauHoiVaDapAn.De8;
 
 /**
- * 
+ *
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class thead {
-    
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-        
+public class NhanVienVanPhong extends NhanVien {
+
+    public float hsl; //he so luong 
+    public int ngayNghi;
+    public float luong;
+    public float luongNghiViec;
+
+    @Override
+    public void nhap() {
+        super.nhap();
+        luongNghiViec = ngayNghi * (hsl * 1050000) / 20;
+        luong = hsl * 1050000 + phuCap - luongNghiViec;
     }
+    
+    @Override 
+    public void xuat(){
+        System.out.println("Nhân viên văn phòng :");
+        super.xuat();
+    }
+
+
 }
