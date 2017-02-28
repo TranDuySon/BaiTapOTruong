@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Cường <duongcuong96 at gmail dot com>.
  *
  * This library is free software; you can redistribute it and/or
@@ -16,34 +16,36 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301  USA
  */
-// Đại khái là dùng thoải mái đuê :3 , cái này2 t code ở mức chạy dc thôi chứ ko bắt exception đâu, cho nhanh =))
-package OnKiemTraJava.CauHoiVaDapAn.De2;
+package OnThi;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  *
  * @author Cường <duongcuong96 at gmail dot com>
  */
-public class Main {
+public class Cau2 {
 
     public static void main(String[] args) {
+        //Câu 2: Viết chương trình nhập vào một số các số nguyên và in ra màn hình các số hoàn chỉnh,
+        //Biết : Số hoàn chỉnh là số nguyên dương có tổng các ước số bé hơn nó bằng chính nó.
         Scanner scan = new Scanner(System.in);
-        System.out.println("Nhập số hộ  muốn thêm : ");
-        int n = scan.nextInt();
-        
-        ArrayList <KhachTro>cacHoGiaDinh = new ArrayList(); //  ArrayList <HoGiaDinh> <---- cái <> là ÉP KIỂU, nếu ko ép kiểu thì mặc định ArrayList sẽ chứa Object ( Object là đối tượng base mà mọi đối tượng trong Java đều extends )
-        //nhap
-        for (int i = 0; i < n; i++) {
-            KhachTro hoGiaDinh = new KhachTro();
-            System.out.println("\t  Nhập thông tin hộ dân số : " + ( i + 1  ) + "\t ");
-            hoGiaDinh.nhap(scan);
-            cacHoGiaDinh.add(hoGiaDinh);
+        System.out.println("Nhập số ");
+        int so = scan.nextInt();
+        //check so hoan hao 
+        int i = 1;
+        int sum = 0;
+        while (i < so) {
+            if( so % i == 0 ){
+                sum += i;
+            }
+            i++;
         }
-        //in
-        for( KhachTro h : cacHoGiaDinh ){
-            h.xuat();
+        if( sum == so ){
+            System.out.println("Đây là số hoàn hảo");
+        }else{
+            System.out.println("Ko phải số hh ");
         }
+
     }
 }
