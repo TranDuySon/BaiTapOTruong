@@ -56,7 +56,7 @@
  			<td> <?php  echo vnd_format($p["price"])." VND"; ?> </td>
  			<td> <?php  echo vnd_format( $p["price"] * $p["amount"]); ?> VND </td>
  			<td><a class=" btn-checkout" href="index.php?r=cart&action=add&id=<?php echo $p['id']; ?>" title="Mua thêm một sản phẩm nữa">+1</a></td>
- 			<td><a style="color:red" href="index.php?r=cart&action=delete&id=<?php echo $p['id']; ?>" title="Xóa sản phẩm này" onclick="return confirm('bạn chắc chứ !?')">xóa</a></td>
+ 			<td><a style="color:red" href="index.php?r=cart&action=delete-one&id=<?php echo $p['id']; ?>" title="Xóa sản phẩm này" onclick="return confirm('bạn chắc chứ !?')">xóa</a></td>
  			<td></td>
  		</tr>
 
