@@ -31,6 +31,16 @@
 						break;
 
 					
+					case "dk" : 
+						include "register.php";
+						break;
+
+			
+					case "login" :
+						include "login.php";
+					break;
+
+
 					default : 
 						include 'template-parts/home.php';
 
