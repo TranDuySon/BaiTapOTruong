@@ -14,6 +14,8 @@
 				<?php endwhile;?>
 
 				<li><a href="index.php?r=about" title="lienhe">Liên hệ</a></li>
+				<li><a href="index.php?r=dk" title="Đăng kí">Đăng kí</a></li>
+				<li><a href="index.php?r=login" title="Đăng nhập">Đăng nhập</a></li>
 				<li><a href="admin">đăng nhập quản trị</a></li>
 			</ul>
 		</div>

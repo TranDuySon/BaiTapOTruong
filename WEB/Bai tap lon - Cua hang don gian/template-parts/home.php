@@ -61,6 +61,7 @@
 
 
 			<div class="body-right">
+				<h3>Xin chào : <?php echo empty($_SESSION["username"]) ? "Khách" : trim($_SESSION["username"]) ?> !</h3>
 				<div class="body-right-title">
 					<h2>Sản phẩm đã mua</h2>
 

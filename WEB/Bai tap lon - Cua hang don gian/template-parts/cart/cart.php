@@ -10,6 +10,12 @@
 		$id = $_GET["id"];
 	} 
 
+	if( !isset($_GET["action"]) ){
+		require_once("checkout.php");	
+		return ;
+	}
+		
+
 	switch( $_GET["action"] ){
 
 		//them san pham vao gio hang 
@@ -49,7 +55,7 @@
 
 		case "delete-one" : 
 			//check xem san pham voi id đã tồn tại chưa, nếu rồi tiến hành xóa nó khỏi danh sách mua 
-
+			$id = $_GET["id"];
 			for( $i = 0 ; $i < sizeof( $_SESSION["products"] ) ; $i++ ){
 
 					if( $_SESSION["products"][$i]["id"] == $id ){

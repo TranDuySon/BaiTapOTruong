@@ -18,7 +18,7 @@ img{
 
 /* body */
 body{
-	max-width: 1024px ;
+	max-width: 1096px ;
 	margin:20px;
 	margin-left:auto;
 	margin-right: auto;
@@ -79,7 +79,6 @@ body{
 	text-align: right;
 	float: right;
 }
-	.menu ul{}
 		.menu li{
 			display: inline-block;
 			height: 62px;
@@ -96,7 +95,7 @@ body{
 	width:100%;
 	min-height: 70px;
 	background-color:#1E824C;
-	
+	overflow: hidden;	
 }
 
 .menu ul li{
@@ -417,8 +416,10 @@ padding: 20px 0px;
 	background-color: lightgray;
 	margin: 5px;
 	text-align: center;
-	min-height: 200px;
+	min-height: 250px;
 	position: relative;
+	max-height: 350px;
+	overflow: hidden;
 }
 
 .block-body-button-tieu-bieu{

@@ -1,5 +1,5 @@
 <?php
- require_once("../inc/lib.php"); ?>
+ require("../inc/lib.php"); ?>
 
 <?php require_once("template-parts/head.php");  ?>
 <?php require_once("template-parts/header.php");?>

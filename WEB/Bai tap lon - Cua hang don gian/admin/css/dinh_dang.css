@@ -91,7 +91,6 @@ body{
 
 .menu ul li{
 	float: left;	
-	min-width: 100px;
 	position:relative;
 	
 }
