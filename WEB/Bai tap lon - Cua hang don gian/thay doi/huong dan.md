@@ -134,17 +134,20 @@ copy nhung dong nay vao file lib.php :
 	}
 	//end validate functions 
 
+
 	function username_exists($username){
 		global $conn;
 		$sql = "SELECT id FROM dang_ky WHERE username='{$username}' ";
-		return  mysqli_query( $conn , $sql ) ;
+		return  mysqli_num_rows(mysqli_query( $conn , $sql )) > 0  ;
 	}
 
 	function email_exists( $email ){
 		global $conn;
 		$sql = "SELECT id FROM dang_ky WHERE email='{$email}' ";
-		return  mysqli_query( $conn , $sql ) ;
+		return  mysqli_num_rows(mysqli_query( $conn , $sql )) > 0  ;
 	}
+
+
 
 
 
